@@ -1,0 +1,45 @@
+.winner_section {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  padding: 10px;
+  position: fixed;
+  top: calc(50vh - 200px);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: rgba(49, 9, 46, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(10px) saturate(150%);
+  -webkit-backdrop-filter: blur(10px) saturate(150%);
+}
+
+.winner_section h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+  user-select: none;
+}
+
+.winner_header {
+  width: 150px;
+}
+
+.winner_footer button {
+  background-color: #fff;
+  width: 200px;
+  height: 40px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #200a59;
+  border-radius: 20px;
+  transition: all 0.4s;
+}
+
+.winner_footer button:hover {
+  background-color: #200a59;
+  color: #fff;
+}

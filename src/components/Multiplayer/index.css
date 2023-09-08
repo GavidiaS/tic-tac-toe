@@ -1,0 +1,48 @@
+.multiplayer_aside {
+  width: 300px;
+  height: 400px;
+  background-color: rgba(49, 9, 46, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  position: fixed;
+  z-index: 5;
+  top: calc(50vh - 200px);
+  border-radius: 20px;
+  backdrop-filter: blur(10px) saturate(150%);
+  -webkit-backdrop-filter: blur(10px) saturate(150%);
+}
+
+.multiplayer_aside button:first-child {
+  width: 25px;
+  height: 25px;
+  background: none;
+  font-size: 2rem;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.multiplayer_aside button:first-child:hover {
+  transform: scale(1.1);
+}
+
+.multiplayer_aside button:nth-child(2),
+.multiplayer_aside button:nth-child(3) {
+  width: 200px;
+  height: max-content;
+  padding: 6px;
+  background-color: #eee;
+  border-radius: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: rgb(49, 9, 46);
+  transition: all 0.4s;
+}
+
+.multiplayer_aside button:nth-child(2):hover,
+.multiplayer_aside button:nth-child(3):hover {
+  background-color: #200a59;
+  color: #eee;
+}
